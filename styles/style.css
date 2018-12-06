@@ -192,3 +192,131 @@ button {
 	height: 1px;
 	background-color: var(--bg-light);
 }
+/*Tweet*/
+.tweet {
+	padding: 12.5rem 1.5rem 7rem;
+	background-color: var(--bg-light);
+	text-align: center;
+}
+.tweet__icon {
+	font-size: 4rem;
+	color: #00aefd;
+	margin-bottom: 3rem;
+}
+.tweet__heading {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+.tweet__location,
+.tweet__author {
+	color: var(--heading);
+	font-weight: bold;
+}
+.tweet__time {
+	color: var(--text);
+	font-weight: 300;
+	padding-left: 1.5rem;
+	margin-left: 1.5rem;
+	position: relative;
+}
+.tweet__time:before {
+	content: "/";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.tweet__content{
+	font-size: 2.4rem;
+	line-height: 1.4;
+	color: var(--text);
+	font-style: italic;
+	max-width: 104.5rem;
+	margin: 0 auto 10rem;
+}
+.tweet__pagi {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tweet__pagi-item {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 5rem;
+	border: 1px solid var(--text);
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+.tweet__pagi-item.is-active {
+	background-color: var(--text);
+}
+/*Images*/
+.images {
+	display: flex;
+	justify-content: space-between;
+	height: 53.5rem;
+	overflow: hidden;
+}
+.images__block {
+	width: 33.333%;
+	height: 100%;
+	display: flex;
+}
+.images__block:first-child {
+	flex-direction: column;
+}
+.images__block-item {
+	height: 50%;
+	width: 100%;
+}
+.images__block-item:first-of-type {
+	display: flex;
+}
+.images__item {
+	position: relative;
+	width: 50%;
+}
+.images__block-item:last-of-type .images__item {
+	width: 100%;
+}
+.images__block:last-child {
+	flex-direction: column-reverse;
+}
+.images__item:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #70c6a6c9;
+	z-index: 10;
+	display: none;
+}
+.images__item-bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.images__item-brand {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	text-align: center;
+	display: none;
+}
+.images__item-brand > img {
+	margin: 0 auto;
+}
+.images__item-text {
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.6rem;
+	margin-top: .5rem;
+	font-weight: bold;
+}
+.images__item:hover:before,
+.images__item:hover .images__item-brand {
+	display: block;
+}
