@@ -274,6 +274,7 @@ button {
 .images__item {
 	position: relative;
 	width: 50%;
+	height: 100%;
 }
 .images__block-item:last-of-type .images__item {
 	width: 100%;
