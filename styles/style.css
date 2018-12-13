@@ -321,3 +321,65 @@ button {
 .images__item:hover .images__item-brand {
 	display: block;
 }
+.discover {
+	padding: 7rem 1.5rem;
+	background-color: var(--bg-dark);
+	text-align: center;
+}
+.discover__btn {
+	display: inline-block;
+	min-width: 30rem;
+	padding: 2rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: white;
+	border: 1px solid currentColor;
+	box-shadow: none;
+	outline: none;
+	text-decoration: none;
+	font-weight: bold;
+	transition: .2s linear;
+}
+.discover__btn:hover {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+.mail {
+	padding: 10rem 1.5rem;
+	background-color: white;
+	text-align: center;
+}
+.mail__logo {
+	margin: 0 auto 3.5rem;
+}
+.mail__text {
+	font-size: 2.4rem;
+	font-style: italic;
+	color: var(--text);
+	margin-bottom: 3.5rem;
+	display: inline-block;
+}
+.mail__form {
+	display: flex;
+	justify-content: space-between;
+	max-width: 54rem;
+	margin: 0 auto;
+}
+.mail__form-inp {
+	border: 1px solid var(--input-border);
+	color: var(--input-text);
+	padding: 2.5rem;
+	font-style: italic;
+	font-size: 2rem;
+	width: 74%;
+}
+.mail__form-btn {
+	width: 25%;
+	border: 0;
+	outline: none;
+	color: white;
+	background-color: var(--primary);
+	text-transform: uppercase;
+	font-size: 2.4rem;
+	font-weight: 300;
+}
