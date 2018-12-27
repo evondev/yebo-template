@@ -13,6 +13,11 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
+          <label for="collapse" class="btn__collapse">
+            <i class="fa fa-bars"></i>
+          </label>
+          <input type="checkbox" id="collapse" style="display: none" class="inp__collapse">
+          <div class="nav__bg"></div>
           <ul class="nav__list">
             <li class="nav__item"><a href="javascript:void(0)" class="nav__link">About us</a></li>
             <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Work</a></li>
@@ -177,7 +182,7 @@
         <img src="images/yebo-logo.png" alt="" class="mail__logo">
         <span class="mail__text">Stay on the saddle!</span>
         <form action="javascript:void(0)" class="mail__form" autocomplete="off">
-          <input type="email" name="email" class="mail__form-inp" placeholder="enter your email..." autofocus>
+          <input type="email" name="email" class="mail__form-inp" placeholder="enter your email...">
           <button class="mail__form-btn">Go</button>
         </form>
       </div>
